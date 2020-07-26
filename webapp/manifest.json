@@ -1,0 +1,118 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "ovly.fiori_26.cadastro_de_alunos",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZT48_26_OVLY_V1_SRV": {
+				"uri": "/sap/opu/odata/sap/ZT48_26_OVLY_V1_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "ovly.fiori_26.cadastro_de_alunos.view.Lista",
+			"type": "XML",
+			"async": true,
+			"id": "Lista"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ovly.fiori_26.cadastro_de_alunos.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZT48_26_OVLY_V1_SRV",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "ovly.fiori_26.cadastro_de_alunos.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "listagem",
+				"pattern": "",
+				"target": [
+					"Lista"
+				]
+			}, {
+				"name": "exibir",
+				"pattern": "aluno/{codigo}",
+				"target": [
+					"Detalhe"
+				]
+			}],
+			"targets": {
+				"Lista": {
+					"viewName": "Lista"
+				},
+				"Detalhe": {
+					"viewName": "Detalhe"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+<mvc:View controllerName="ovly.fiori_26.cadastro_de_alunos.controller.Lista" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>appTitle}" showNavButton="true">
+					<content>
+						<SearchField placeholder="Nome" search="onSearch"></SearchField>
+						<!--<List noDataText="Nenhum aluno encontrado" itemPress="onItemPress" >-->
+						<List items="{/Students}" growing="true" growingScrollToLoad="true" growingThreshold="10" noDataText="Nenhum aluno encontrado"
+							itemPress="onItemPress">
+							<items>
+								<!-- COMENTAR O CODIGO CTRL+/  -->
+								<!-- <StandardListItem title="A" info="B" icon="sap-icon://customer" type="Navigation" /> -->
+								<!--<StandardListItem title="A" info="B" icon="sap-icon://employee" type="Active" ></StandardListItem>-->
+								<!--<StandardListItem title="A" info="B" icon="sap-icon://employee" type="Navigation" ></StandardListItem>-->
+								<!--<StandardListItem title="A" info="B" icon="sap-icon://employee" type="DetailAndActive" ></StandardListItem>-->
+								<!--<StandardListItem description="{Id}" title="{FirstName} {LastName}" info="{UserName}" icon="sap-icon://employee" type="Navigation"/>-->
+								<StandardListItem description="{Id}" title="{path:'FirstName', formatter: '.toUpper' } {LastName}" info="{UserName}"
+									icon="sap-icon://employee" type="Navigation"/>
+							</items>
+						</List>
+					</content>
+					<footer>
+						<Bar>
+							<contentRight>
+								<Button icon="sap-icon://add" type="Emphasized" press="onAdd"></Button>
+							</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

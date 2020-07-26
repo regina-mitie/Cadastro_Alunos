@@ -1,0 +1,71 @@
+[{
+	"Id": "01",
+	"Name": "Regina",
+	"__metadata": {
+		"uri": "Skillss(0)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": "10",
+	"Name": "Fulano",
+	"__metadata": {
+		"uri": "Skillss(0)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 6,
+	"Name": "Fulano 3",
+	"__metadata": {
+		"uri": "Skillss(6)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 2,
+	"Name": "Fulano 4",
+	"__metadata": {
+		"uri": "Skillss(2)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 7,
+	"Name": "Name 5",
+	"__metadata": {
+		"uri": "Skillss(7)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": "44",
+	"Name": "Fulano 6",
+	"__metadata": {
+		"uri": "Skillss(2)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 5,
+	"Name": "Name 7",
+	"__metadata": {
+		"uri": "Skillss(5)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 7,
+	"Name": "Name 8",
+	"__metadata": {
+		"uri": "Skillss(7)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 0,
+	"Name": "Name 9",
+	"__metadata": {
+		"uri": "Skillss(0)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}, {
+	"Id": 8,
+	"Name": "Name 10",
+	"__metadata": {
+		"uri": "Skillss(8)",
+		"type": "ZT48_26_OVLY_V1_SRV.Skills"
+	}
+}]
